@@ -53,7 +53,13 @@ p {
   text-align: center;
   color: var(--primary-color);
 }
-
+.info {
+  padding: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  color: black;
+}
 .navbar-brand {
   font-family: var(--secondary-font) !important;
   font-size: 24px !important;
@@ -66,7 +72,13 @@ p {
   margin-top: 40px;
   justify-content: center;
 }
-
+.navigation-link a {
+  margin: auto;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
 .navigation-links a {
   margin: 20px;
   border-radius: 4px;
@@ -101,15 +113,25 @@ p {
   display: block;
 }
 
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
 .default-btn {
-  color: var(--text-btn-color) !important;
+  color: white;
   display: inline-block;
-  background-color: var(--accent-color-light);
+  background-color: var(--primary-color);
   padding: 6px 16px;
   font-size: 18px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
   transition: 150ms ease-in-out;
+  text-decoration: none;
+}
+.default-btn:hover {
+  color: var(--light-color) !important;
+  background-color: var(--accent-color);
 }
 
 .subtitle {
