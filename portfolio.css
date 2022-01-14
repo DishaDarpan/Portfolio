@@ -1,19 +1,31 @@
 :root {
+  --accent-color: #200505;
+  --accent-color-light: #bc3b3b;
+  --accent-color-dark: #871818;
+  --light-color: #ededed;
+  --titles-color: #3e0808;
+  --secondary-titles-color: #666666;
+  --text-color: #444444;
+  --text-btn-color: #25282b;
+  --primary-font: "Playfair Display", serif;
+  --secondary-font: "poppins", sans-serif;
+  --box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
   --primary-color: rgb(199, 15, 101);
   --secondary-color: #e1dfe7;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
+  text-align: center;
   font-family: "Poppins", sans-serif;
   padding: 30px;
-  margin: 60px auto;
-  max-width: 800px;
+  margin: auto;
+  max-width: 1500px;
 }
 
 h1,
 h2,
 h3 {
+  font-family: var(--primary-font) !important;
   text-align: center;
   margin: 0;
 }
@@ -34,14 +46,21 @@ h3 {
 }
 
 p {
-  background: var(--secondary-color);
   padding: 20px;
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
+  color: var(--primary-color);
 }
 
+.navbar-brand {
+  font-family: var(--secondary-font) !important;
+  font-size: 24px !important;
+}
+.navbar-brand:hover {
+  color: var(--accent-color) !important;
+}
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -55,20 +74,69 @@ p {
   text-decoration: none;
   text-transform: capitalize;
 }
-
 .contact-link {
+  font-size: 20px;
+  font-weight: bold;
   background: rgb(199, 15, 101);
   box-shadow: var(--box-shadow);
   color: white;
 }
+.contact-link:hover {
+  color: black;
+}
 
 .about-link {
+  font-size: 20px;
+  font-weight: bold;
   color: rgb(199, 15, 101);
   border: 1px solid rgb(199, 15, 101);
+}
+.about-link:hover {
+  color: black;
 }
 
 .homepage-link {
   color: var(--primary-color);
   text-align: center;
   display: block;
+}
+
+.default-btn {
+  color: var(--text-btn-color) !important;
+  display: inline-block;
+  background-color: var(--accent-color-light);
+  padding: 6px 16px;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  transition: 150ms ease-in-out;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+  font-size: 54px;
+  margin: 100px auto;
+}
+
+.subtitle:after {
+  content: "";
+  display: block;
+  margin: 11px auto 15px;
+  width: 240px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+}
+
+.skills-container h6 {
+  font-size: 12px;
+}
+.footer {
+  margin: 110px auto 30px;
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-weight: lighter;
+  color: var(--text-color);
 }
